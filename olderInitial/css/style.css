@@ -1,0 +1,243 @@
+/* Breakpoints */
+/* 0 - 600px:      Phone */
+/* 600 - 900px:    Tablet portrait */
+/* 900 - 1200px:   Tablet landscape */
+/* [1200 - 1800] is where our normal styles apply */
+/* 1800px + :      Big desktop */
+
+html {
+  font-size: 62.5%;
+}
+
+/* General layout + grid */
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 52.25%;
+  }
+}
+
+/* Page layout */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Components */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Global styles */
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  background-color: #1098ad;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  /* text-align: center; */
+  color: #333;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+}
+
+/* Navigation and footer */
+nav,
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 3rem;
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  float: right;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Page sections */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 5rem 4rem;
+}
+
+#my-img {
+  height: 40rem;
+  object-fit: cover;
+  margin: 5rem 0;
+}
+
+/* Smaller elements */
+h1,
+h2,
+h3 {
+  color: #0f1111;
+  text-decoration: underline;
+}
+
+h1 {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  padding: 0.1rem 0.1rem;
+}
+
+#my-intro {
+  padding: 10rem 5rem;
+  width: auto;
+  text-align: center;
+}
+
+.intro-heading {
+  text-decoration: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#my-name {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Century Gothic, sans-serif;
+}
+
+a:hover {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: #fff;
+  font-style: italic;
+}
+
+a:visited {
+  color: #fff;
+}
+
+/* skills */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* style the child elements */
+
+#contact-me {
+  align-content: center;
+  padding-bottom: 10rem;
+}
+
+#contact-me img {
+  height: 6rem;
+}
+
+#contact-me div {
+  padding-top: 5rem;
+  padding-left: 9rem;
+}
+
+.about-me {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Skills */
+.content {
+  width: auto;
+  height: auto;
+  display: flex;
+  background-color: #1098ad;
+}
+
+.skill,
+.contact {
+  width: 50rem;
+  margin: 1rem;
+  background-color: #333;
+  padding: 2rem;
+}
+
+.contact {
+  width: 60rem;
+  padding: 0;
+}
+
+#row-rev {
+  flex-direction: row;
+}
+
+.skill-h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.projects {
+  color: #fff;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.project-list {
+  margin: 1rem 0;
+}
+
+#github-img {
+  width: 5rem;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
