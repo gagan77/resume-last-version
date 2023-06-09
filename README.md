@@ -1,2 +1,2 @@
-# resume2
+# Personal Website
 Last version of personal portfolio website
